@@ -13,10 +13,15 @@
         <entry key="..\:/Users/Assaf/Desktop/Projects/TicTacToeApp/app/src/main/res/layout/activity_win_dialog.xml" value="0.3453125" />
         <entry key="..\:/Users/Assaf/Desktop/Projects/TicTacToeApp/app/src/main/res/layout/history_row.xml" value="0.2265625" />
         <entry key="..\:/Users/Assaf/Desktop/Projects/TicTacToeApp/app/src/main/res/menu/menu.xml" value="0.2265625" />
+        <entry key="..\:/dev/AndroidProject/TicTacToeApp/app/src/main/res/layout/activity_add_players.xml" value="0.17572463768115942" />
+        <entry key="..\:/dev/AndroidProject/TicTacToeApp/app/src/main/res/layout/activity_history_list.xml" value="0.17572463768115942" />
+        <entry key="..\:/dev/AndroidProject/TicTacToeApp/app/src/main/res/layout/activity_main.xml" value="0.17572463768115942" />
+        <entry key="..\:/dev/AndroidProject/TicTacToeApp/app/src/main/res/layout/activity_win_dialog.xml" value="0.17572463768115942" />
+        <entry key="..\:/dev/AndroidProject/TicTacToeApp/app/src/main/res/layout/history_row.xml" value="0.17572463768115942" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

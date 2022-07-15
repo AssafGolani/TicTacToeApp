@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TicTacToeApp</string>
+    <string name="enter_player_names_popup">Please enter player names</string>
+    <string name="player_one">player One</string>
+    <string name="player_two">Player Two</string>
+    <string name="start_game_btn">Start Game</string>
+    <string name="check_history">Check History</string>
+    <string name="enter_player_names">Enter Player Names</string>
+    <string name="start_again_btn">Start Again</string>
+    <string name="history_game_logo">History</string>
+    <string name="draw_msg">Its a draw!</string>
+    <string name="won_msg">" has won the game"</string>
+
 </resources>

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="Enter Player names"
+        android:text="@string/enter_player_names"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -41,7 +41,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:background="@color/dark_blue"
-            android:hint="Player One"
+            android:hint="@string/player_one"
             android:inputType="text"
             android:maxLines="1"
             android:textColor="#FFFFFF"
@@ -72,7 +72,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:background="@color/dark_blue"
-            android:hint="Player Two"
+            android:hint="@string/player_two"
             android:inputType="text"
             android:maxLines="1"
             android:textColor="#FFFFFF"
@@ -87,7 +87,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/round_back_blue_100"
-        android:text="Start Game"
+        android:text="@string/start_game_btn"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -100,10 +100,9 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/teal_200"
-        android:text="Check History"
+        android:onClick="onClickHistory"
+        android:text="@string/check_history"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:onClick="onClickHistory"
-        />
+        android:textStyle="bold" />
 </LinearLayout>

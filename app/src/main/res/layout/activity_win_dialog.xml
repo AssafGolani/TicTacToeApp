@@ -10,14 +10,14 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
             android:id="@+id/msgTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:gravity="center"
-            android:text="It is Draw"
+            android:text="@string/draw_msg"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/round_back_blue_100"
-            android:text="Start Again"
+            android:text="@string/start_again_btn"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
     </LinearLayout>
