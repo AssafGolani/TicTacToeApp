@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-atuo">
     <item android:id="@+id/history_view"
-        android:title="History"
+        android:title="@string/history_game_logo"
         android:enabled="true"
         android:icon="@drawable/history"
         app:showAaction="never"/>

@@ -10,5 +10,6 @@
     <string name="history_game_logo">History</string>
     <string name="draw_msg">Its a draw!</string>
     <string name="won_msg">" has won the game"</string>
+    <string name="home">"Home"</string>
 
 </resources>

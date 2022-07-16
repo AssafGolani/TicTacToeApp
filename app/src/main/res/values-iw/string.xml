@@ -11,5 +11,6 @@
     <string name="history_game_logo">"הסטורית המשחקים "</string>
     <string name="draw_msg">תיקו!</string>
     <string name="won_msg">" המנצח במשחק!"</string>
+    <string name="home">"בית"</string>
 
 </resources>

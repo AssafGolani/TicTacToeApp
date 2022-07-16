@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-atuo">
     <item android:id="@+id/add_player_view"
-        android:title="Home"
+        android:title="@string/home"
         android:enabled="true"
         android:icon="@drawable/home"
         app:showAaction="never"/>
