@@ -3,9 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/dark_purple_bg"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -220,4 +224,14 @@
                 android:src="@drawable/transparent_bg" />
         </LinearLayout>
     </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/mango"
+        android:clipToPadding="false"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu_main_activity" />
 </RelativeLayout>

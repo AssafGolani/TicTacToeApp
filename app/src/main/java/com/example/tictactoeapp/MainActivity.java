@@ -14,11 +14,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class MainActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
@@ -210,6 +212,18 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor myEdit = sh.edit();
         myEdit.putString("history", gson.toJson(holder));
         myEdit.commit();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setOnItemSelectedListener(screen ->{
+            if (screen.getItemId() == R.id.history_view){
+                Intent intent = new Intent(this, HistoryList.class);
+                startActivity(intent);
+            }
+            else if (screen.getItemId() == R.id.add_player_view){
+                Intent intent = new Intent(this, AddPlayers.class);
+                startActivity(intent);
+            }
+            return true;
+        });
     }
 
 
@@ -344,6 +358,7 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         Intent backgroundMusic = new Intent(MainActivity.this, SoundService.class);
         stopService(backgroundMusic);
+        finish();
     }
 
     @Override
@@ -369,5 +384,8 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer.start();
         mediaPlayer = null;
     }
+
+
+
 
 }

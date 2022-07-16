@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-atuo">
     <item android:id="@+id/history_view"
         android:title="History"
+        android:enabled="true"
+        android:icon="@drawable/history"
+        app:showAaction="never"/>
+    <item android:id="@+id/add_player_view"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/home"
         app:showAaction="never"/>
 
 </menu>

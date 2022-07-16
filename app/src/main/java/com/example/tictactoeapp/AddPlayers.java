@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class AddPlayers extends AppCompatActivity {
 
 
@@ -19,6 +21,15 @@ public class AddPlayers extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_players);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setOnItemSelectedListener(screen ->{
+            if (screen.getItemId() == R.id.history_view){
+                Intent intent = new Intent(this, HistoryList.class);
+                startActivity(intent);
+            }
+            return true;
+        });
 
         // play background music
         Intent backgroundMusic = new Intent(AddPlayers.this, SoundService.class);
@@ -55,28 +66,11 @@ public class AddPlayers extends AppCompatActivity {
                 }
             }
         });
+
+
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        try{
-            getMenuInflater().inflate(R.menu.add_player_activity_menu, menu);
-            return true;
-        }catch (RuntimeException e){
-            System.out.println("App Crashed due to: " + e);
-            return false;
-        }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.history_view){
-            Intent intent = new Intent(this, HistoryList.class);
-            startActivityForResult(intent, 0);
-            return true;
-        }
-        return false;
-    }
 
     @Override
     public void onPause() {
@@ -84,6 +78,15 @@ public class AddPlayers extends AppCompatActivity {
         super.onPause();
         Intent backgroundMusic = new Intent(AddPlayers.this, SoundService.class);
         stopService(backgroundMusic);
+        finish();
+    }
+
+    @Override
+    public void onResume() {
+        // play background music
+        super.onResume();
+        Intent backgroundMusic = new Intent(AddPlayers.this, SoundService.class);
+        startService(backgroundMusic);
     }
 
     @Override
@@ -92,11 +95,7 @@ public class AddPlayers extends AppCompatActivity {
         super.onDestroy();
         Intent backgroundMusic = new Intent(AddPlayers.this, SoundService.class);
         stopService(backgroundMusic);
-    }
-
-    public void onClickHistory(View view) {
-        Intent intent = new Intent(this, HistoryList.class);
-        startActivity(intent);
+        finish();
     }
 
 

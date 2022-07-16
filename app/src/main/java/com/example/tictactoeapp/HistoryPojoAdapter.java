@@ -1,17 +1,12 @@
 package com.example.tictactoeapp;
 
-import static android.content.Context.MODE_PRIVATE;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
-import com.google.gson.Gson;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
