@@ -51,9 +51,10 @@ public class AddPlayers extends AppCompatActivity {
 
                 // Check if user not entered Player Names
                 if (playerOneName.isEmpty() || playerTwoName.isEmpty()) {
-                    Toast.makeText(AddPlayers.this, "Please enter Player Names", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddPlayers.this,getString(R.string.enter_player_names_popup) , Toast.LENGTH_SHORT).show();
                 } else {
 
+                    //Please enter Player Names
                     // Create Object of Intent class to Open GameView Screen (MainActivity.java)
                     Intent intent = new Intent(AddPlayers.this, MainActivity.class);
 

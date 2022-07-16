@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">איקס עיגול</string>
+    <string name="enter_player_names_popup">הכנס את שמות השחקים</string>
+    <string name="player_one">"שחקן אחד "</string>
+    <string name="player_two">שחקן שני</string>
+    <string name="start_game_btn">התחל משחק</string>
+    <string name="check_history">טבלת המשחקים</string>
+    <string name="enter_player_names">"הכנס את שמות השחקנים "</string>
+    <string name="start_again_btn">התחל שוב</string>
+    <string name="history_game_logo">"הסטורית המשחקים "</string>
+    <string name="draw_msg">תיקו!</string>
+    <string name="won_msg">" המנצח במשחק!"</string>
+
+</resources>

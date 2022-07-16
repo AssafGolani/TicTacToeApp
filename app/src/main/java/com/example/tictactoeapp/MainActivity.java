@@ -245,12 +245,12 @@ public class MainActivity extends AppCompatActivity {
             if (checkPlayerWin()) {
 
                 // show win dialog with a message along with winner name
-                final WinDialog winDialog = new WinDialog(MainActivity.this, playerOneName.getText().toString() + " has won the game");
+                final WinDialog winDialog = new WinDialog(MainActivity.this, playerOneName.getText().toString() + getString(R.string.won_msg));
                 winDialog.show();
             } else if (totalSelectedBoxes == 9) { // over this game if there is no box left to be select
 
                 // show win dialog with 'draw' message
-                final WinDialog winDialog = new WinDialog(MainActivity.this, "It is a Draw!");
+                final WinDialog winDialog = new WinDialog(MainActivity.this, getString(R.string.draw_msg));
                 winDialog.show();
 
             } else {
@@ -267,13 +267,13 @@ public class MainActivity extends AppCompatActivity {
             if (checkPlayerWin()) {
 
                 // show win dialog with a message
-                final WinDialog winDialog = new WinDialog(MainActivity.this, playerTwoName.getText().toString() + " has won the game");
+                final WinDialog winDialog = new WinDialog(MainActivity.this, playerTwoName.getText().toString() + getString(R.string.won_msg));
                 winDialog.setCancelable(false);
                 winDialog.show();
             } else if (totalSelectedBoxes == 9) { // over this game if there is no box left to be select
 
                 // show win dialog with 'draw' message
-                final WinDialog winDialog = new WinDialog(MainActivity.this, "It is a Draw!");
+                final WinDialog winDialog = new WinDialog(MainActivity.this,getString(R.string.draw_msg));
                 winDialog.setCancelable(false);
                 winDialog.show();
 
